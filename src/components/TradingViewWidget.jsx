@@ -12,7 +12,7 @@ function TradingViewWidget({ symbol }) {
     script.async = true;
     script.innerHTML = `
         {
-          "width": "1040",
+          "width": "920",
           "height": "610",
           "symbol": "${symbol}",
           "interval": "D",
