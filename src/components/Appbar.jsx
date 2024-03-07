@@ -14,7 +14,7 @@ export const Appbar = () => {
         <NavButton label={"Crypto Taxes"} />
         <NavButton label={"Free Tools"} />
         <NavButton label={"Resource Center"} />
-        <button className="mx-2 bg-blue-500 px-10 py-1 my-5 text-white rounded-lg font-bold">
+        <button className="mx-2 bg-blue-500 px-10 py-1 my-5 text-white rounded-lg font-bold hover:bg-blue-600 ">
           Get Started
         </button>
       </div>
