@@ -59,7 +59,7 @@ export const ChartView = () => {
           </p>
         </div>
       </div>
-      <div className="ml-4">
+      <div className="lg:h-[480px] h-[300px] mx-4 pb-4">
         <TradingViewWidget symbol="BITSTAMP:BTCUSD" />
       </div>
     </div>

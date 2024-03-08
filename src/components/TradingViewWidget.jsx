@@ -12,15 +12,16 @@ function TradingViewWidget({ symbol }) {
     script.async = true;
     script.innerHTML = `
         {
-          "width": "920",
-          "height": "610",
+          "autosize": true,
           "symbol": "${symbol}",
-          "interval": "D",
+          "interval": "W",
           "timezone": "Etc/UTC",
           "theme": "light",
           "style": "3",
           "locale": "in",
           "enable_publishing": false,
+          "hide_top_toolbar": true,
+          "save_image": false,
           "calendar": false,
           "hide_volume": true,
           "support_host": "https://www.tradingview.com"
@@ -29,17 +30,11 @@ function TradingViewWidget({ symbol }) {
   }, []);
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
-      <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright">
-        <a
-          href="https://in.tradingview.com/"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          {/* <span className="blue-text">Track all markets on TradingView</span> */}
-        </a>
-      </div>
+    <div
+      className="tradingview-widget-container"
+      ref={container}
+      style={{ height: "100%", width: "100%" }}
+    >
     </div>
   );
 }
